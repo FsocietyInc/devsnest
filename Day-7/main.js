@@ -28,7 +28,14 @@ var library = [
   },
 ];
 
-console.log(library);
+for (let i = 0; i < library.length; i++) {
+  var book = "'" + library[i].title + "'" + " by " + library[i].author + ".";
+  if (library[i].readingStatus) {
+    console.log("I read " + book);
+  } else {
+    console.log("I am yet to read " + book);
+  }
+}
 
 // Write a JavaScript program to get the volume of a Cylinder with four decimal places using object classes.
 
@@ -51,7 +58,12 @@ var library = [
     libraryID: 3245,
   },
 ];
-
-console.log(library.sort(title));
-
-// Unfinished
+function libSort(bookO, bookT) {
+  if (bookO.title > bookT.title) {
+    return -1;
+  } else if (bookO.title < bookT.title) {
+    return 1;
+  }
+  return 0;
+}
+console.log(library.sort(libSort));
