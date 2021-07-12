@@ -1,0 +1,45 @@
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: peachpuff;
+  width: 100vw;
+}
+
+section {
+  display: flex;
+  margin: 50px;
+  width: 90%;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.info-panel {
+  width: 90vw;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 65px;
+}
+
+.room {
+  margin: 60px 60px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.seat {
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+  background: #18e4f3;
+  border: 4px rgb(226, 110, 110) solid;
+}
+
+.seat:hover {
+  opacity: 0.6;
+  transform: scale(1.1);
+}
